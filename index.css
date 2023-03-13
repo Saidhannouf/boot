@@ -1,0 +1,175 @@
+
+h1{
+    text-align: center;
+    
+    padding: 20px;
+}
+.container-fluid{
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(255, 250, 250);
+    
+}
+/* te7rik el countries*/
+.wavy
+{
+	position:relative;
+	-webkit-box-reflect:below -12px linear-gradient(
+	transparent,rgba(0,0,0,0.5));
+	
+}
+
+.wavy span
+{
+	position:relative;
+	display: inline-block;
+	font-size: 1em;
+	text-transform:uppercase;
+	animation: animate 1s ease-in-out infinite;
+	animation-delay:calc(0.1s*var(--i));
+	
+}
+@keyframes animate
+{
+	0%
+	{
+		transform:translateY(0px);
+	}
+    0%
+	{
+		transform:translateY(0px);
+	}
+	20%
+	{
+		transform:translateY(-20px);
+	}
+	40%,100%
+	{
+		transform:translateY(0px);
+	}
+}
+
+
+/*te7rik*/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing:  border-box;
+	font-family: 'Poppins',sans-serif;
+}
+body
+{
+	
+	justify-content:center;
+	align-items:center;
+	min-height: 100vh;
+}
+
+.box2
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 40px;
+	transition:0.5s;
+	
+}
+.box2:hover
+{
+	height:320px;
+	
+	
+}
+.box2 .imgBx
+{
+	position:absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	padding:10px;
+	box-sizing: border-box;
+}
+.box2 .imgBx img
+{
+	max-width:100%;
+	
+	transition:0.5s;
+	
+}
+.box2:hover .imgBx img
+{
+	opacity:1;
+}
+.box2:before
+{
+	content:'';
+	position:absolute;
+	top:-2px;
+	left:-2px;
+	right:-2px;
+	bottom:-2px;
+	background: #fff;
+	z-index:-1;
+}
+.box2:after
+{
+	content: '';
+	position:absolute;
+	top:-2px;
+	left:-2px;
+	right:-2px;
+	bottom:-2px;
+	background: #fff;
+	z-index:-2;
+	filter:blur(40px);
+}
+.box2 .content2
+{
+	position:absolute;
+	bottom:0;
+	left:10px;
+	right:10px;
+	height:50px;
+	background:rgba(10,110,255, 0.555);
+	
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	opacity:0;
+	transition:0.5s;
+	
+	
+}
+.box2:hover .content2
+{
+	opacity:1;
+	transition:0.5s;
+	
+}
+.box2 .content2 h2
+{
+	font-size: 20px;
+	color:#fff;
+	font-weight:500;
+	line-height: 20px;
+	letter-spacing: 1px;
+
+}
+.box2 .content2 h2 span
+{
+	font-size: 14px;
+	color:#fff;
+	font-weight:200;
+	line-height: 20px;
+	letter-spacing: 2px;
+
+}
+	.container text-center{
+        justify-content:center;
+	align-items:center;
+    }
